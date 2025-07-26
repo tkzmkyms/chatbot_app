@@ -1,4 +1,4 @@
-<div class="h-screen flex flex-col bg-gray-100">
+<div class="h-screen flex flex-col bg-gray-100 overflow-hidden">
   <!-- チャットエリア -->
   <div id="chat-box" class="flex-1 overflow-y-auto p-4 space-y-2" data-controller="scroll">
     <%= turbo_stream_from "messages" %>

@@ -17,9 +17,9 @@ export default class extends Controller {
     this.element.scrollTop = this.element.scrollHeight
 
     // 画面全体も一番下までスクロール
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: "smooth"
-    })
+    // window.scrollTo({
+    // top: document.body.scrollHeight,
+    //  behavior: "smooth"
+    // })
   }
 }
