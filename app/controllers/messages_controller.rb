@@ -36,7 +36,7 @@ class MessagesController < ApplicationController
     when /ありがとう|感謝/
       "どういたしまして！また質問してくださいね。"
     else
-      "申し訳ありません、その質問にはまだ対応していません。"
+      "申し訳ありません、現在、営業時間、場所、アクセス、社長、代表、以外の質問にはまだ対応していません。"
     end
   end
 end
