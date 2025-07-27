@@ -28,11 +28,11 @@ class MessagesController < ApplicationController
   def generate_bot_response(user_message)
     case user_message
     when /営業時間/
-      "営業時間は平日9時から18時までです。"
+      "営業時間は平日6時から19時までです。"
     when /場所|アクセス/
-      "本社は東京駅から徒歩5分の場所にあります。"
+      "本社はしまバス本社前バス停にあります。"
     when /社長|代表/
-      "弊社の代表は田中太郎です。"
+      "弊社の代表は岩崎勇登です。"
     when /ありがとう|感謝/
       "どういたしまして！また質問してくださいね。"
     else
