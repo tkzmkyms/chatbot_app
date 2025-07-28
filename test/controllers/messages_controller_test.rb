@@ -1,13 +1,15 @@
+# test/controllers/messages_controller_test.rb
+
 require "test_helper"
 
 class MessagesControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get messages_url
+    get root_url
     assert_response :success
   end
 
-  test "should get create" do
-    get messages_url
-    assert_response :success
+  test "should create message" do
+    post messages_url, params: { message: { content: "こんにちは" } }
+    assert_redirected_to root_url
   end
 end
