@@ -7,7 +7,7 @@
 
   <!-- メッセージ送信フォーム -->
   <div class="bg-white border-t p-4">
-    <%= form_with url: messages_path, local: false do |f| %>
+    <%= form_with model: Message.new, url: messages_path, local: false do |f| %>
       <div class="flex">
         <%= f.text_field :content, class: "flex-1 border rounded-full px-4 py-2 mr-2", placeholder: "メッセージを入力…" %>
         <%= f.submit "送信", class: "bg-blue-500 text-white px-4 py-2 rounded-full" %>
